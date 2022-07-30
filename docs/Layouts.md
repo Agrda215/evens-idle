@@ -29,4 +29,4 @@ document.getElementById(/* name */).innerText = ""
 - upgrades: i think strong a upgrades.
 - buyables:if there buyable get found.
 - milestones:i so milestone get found:
-- label: Returns `<label>` html element samples at `{type:"label", text:"Hello Label i defaluted."}`
+- label: Returns `<label>` html element samples at `{type:"label", text:"Hello Label i defaluted.", forThings:"instant things"}`
