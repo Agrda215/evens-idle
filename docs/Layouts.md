@@ -30,3 +30,5 @@ document.getElementById(/* name */).innerText = ""
 - buyables:if there buyable get found.
 - milestones:i so milestone get found:
 - label: Returns `<label>` html element samples at `{type:"label", text:"Hello Label i defaluted.", forThings:"instant things"}`
+- clickables: i be than clickables of this!
+- flex: display than flex samples at `{type:"flex", style:{justifyContent:"center"}}`.
