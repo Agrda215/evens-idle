@@ -21,3 +21,4 @@
 - unlocked(): A be show unlocked here.
 - done():Appears This are "done" when thrown.
 - hasDoned:Has Doned must have value of bollean.
+- style:A be css for milestones.

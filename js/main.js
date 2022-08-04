@@ -161,6 +161,20 @@ let game = {
         hasDoned:new Decimal(2e10),
         hasDonedAppear() {return game.layers[0].startData.resource.gte(game.layers[0].milestones[0].hasDoned)}
       },
+      4:{
+        title:"5e10 A",
+        description:"wow wow",
+        done() {return game.layers[0].startData.resource.gte(5e10)},
+        hasDoned:new Decimal(5e10),
+        hasDonedAppear() {return game.layers[0].startData.resource.gte(game.layers[0].milestones[0].hasDoned)}
+      },
+      5:{
+        title:"1e11 A",
+        description:"wow wow",
+        done() {return game.layers[0].startData.resource.gte(1e11)},
+        hasDoned:new Decimal(1e11),
+        hasDonedAppear() {return game.layers[0].startData.resource.gte(game.layers[0].milestones[0].hasDoned)}
+      },
     }
   }]
 }
@@ -347,6 +361,10 @@ function UpdateGameArea() {
   document.getElementById("milestoneDesc2").innerText = game.layers[0].milestones["2"].description
   document.getElementById("milestoneTitle3").innerText = game.layers[0].milestones["3"].title
   document.getElementById("milestoneDesc3").innerText = game.layers[0].milestones["3"].description
+  document.getElementById("milestoneTitle4").innerText = game.layers[0].milestones["4"].title
+  document.getElementById("milestoneDesc4").innerText = game.layers[0].milestones["4"].description
+  document.getElementById("milestoneTitle5").innerText = game.layers[0].milestones["5"].title
+  document.getElementById("milestoneDesc5").innerText = game.layers[0].milestones["5"].description
   if(game.layers[0].upgrades["14"].bought >= 1) {
     document.getElementById("button14").style.backgroundColor = "green"
   } else {
@@ -416,6 +434,16 @@ function UpdateGameArea() {
     document.getElementById("milestone3").style.backgroundColor = "green"
   } else {
     document.getElementById("milestone3").style.backgroundColor = "red"
+  }
+  if(game.layers[0].startData.resource.gte(game.layers[0].milestones["4"].hasDoned)) {
+    document.getElementById("milestone4").style.backgroundColor = "green"
+  } else {
+    document.getElementById("milestone4").style.backgroundColor = "red"
+  }
+  if(game.layers[0].startData.resource.gte(game.layers[0].milestones["5"].hasDoned)) {
+    document.getElementById("milestone5").style.backgroundColor = "green"
+  } else {
+    document.getElementById("milestone5").style.backgroundColor = "red"
   }
   if(game.layers[0].upgrades["23"].bought >= 1) {
     document.getElementById("buttonBuyable12").style.display = "block"
