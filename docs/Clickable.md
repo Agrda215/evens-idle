@@ -25,3 +25,4 @@ clickables:{
 - style: a be css clickables now.
 - RepeatOnClicked: Arrays: `Times`: Times be repeat. `Onclicked`: i show onclicked now.
 - unlocked(): a be show unlock be of this!
+- barAvaible:The Bar Visible on the boolean.
