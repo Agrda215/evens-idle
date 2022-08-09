@@ -462,4 +462,5 @@ function UpdateGameArea() {
   if(hasUpgrade(0, "13")) game.layers[0].startData.gain = game.layers[0].startData.gain.mul(3)
 }
 
+// COOL BE NOW!
 setInterval(UpdateGameArea, 200)

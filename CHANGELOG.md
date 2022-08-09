@@ -1,5 +1,9 @@
 # CHANGELOG - EVENS IDLE
 
+## v1.0.3.2 - Small Update II
+
+- Added Example of Upgrade.
+
 ## v1.0.3.1 - Small Update
 
 - Added 1 Layout Component
